@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="./p5.play.js"></script>
+    <style>
+     h1 {font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif	;
+        /* font-style:sans-serif; */
+        font-weight: bold;
+     }   
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body style=" background-color:bisque; text-align: center;"> 
+    <p style="line-height: 1.5">
+            <h1>
+                Hey there!
+            </h1>             
+            <div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">   
+            In this game, there are three levels, increasing in difficulty level. The goal of each level is the same,<br/> to get hold of the golden key and reach the door to get out of the maze. Stay away from all the monsters!<br/> If you ever find yourself under one, keep space key continuously pressed to destroy them. If you fail to do so, they will destroy you.
+            Good Luck!            
+        </div>
+        </p>
+    <script>
+        var mobileDevice;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // true for mobile device
+            console.log("mobile device");
+            mobileDevice = true;
+            Document.getElementById("warning");
+        } else {
+            // false for not mobile device
+            console.log("not mobile device");
+            mobileDevice = false;
+        }
+    </script>
+    <a href="level1.html"><img src="/Images/level1.png" alt="Leve l"></a><br/>
+    <a href="level2.html"><img src="/Images/level2.png" alt="Level 2"></a><br/>
+    <a href="level3.html"><img src="/Images/level3.png" alt="Level 3"></a>
+</body>
+</html>

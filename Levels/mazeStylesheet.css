@@ -1,0 +1,9 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    color: burlywood;
+    margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Level 2</title>
+    <script src="/p5.js"></script>
+    <script src="/p5.dom.min.js"></script>
+    <script src="/p5.sound.min.js"></script>
+    <script src="/p5.play.js"></script>
+    
+    <script src="/hammer.min.js"></script>
+    
+   <link rel="stylesheet" type="text/css" href="level2Css.css">
+    </head>
+    <body>
+        <script>
+            var level = 2;
+        var mobileDevice;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // true for mobile device
+            console.log("mobile device");
+            mobileDevice = true;
+        } else {
+            // false for not mobile device
+            console.log("not mobile device");
+            mobileDevice = false;
+        }
+        </script>
+        <script src="/Maze/Cell.js"></script>
+        <script src="/Maze/Character.js"></script>
+        <script src="/Maze/Maze.js"></script>
+        <script src="/Maze/Player.js"></script>
+        <script src="../sketch.js"></script>
+    </body>
+</html>
